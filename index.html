@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -22,10 +23,10 @@
 <body>
     <header id="home">
         <nav class="header-content">
-            <a href="#" class="logo" data-aos="fade-up" data-aos-delay="300"><span class="material-symbols-outlined">
+            <a href="#" class="logo"><span class="material-symbols-outlined">
                     health_and_safety
-                </span>CLINICA MÉDICA</a>
-            <div class="mobile-menu" data-aos="fade-down">
+                </span>CLINICA SV</a>
+            <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -38,24 +39,25 @@
             </ul>
         </nav>
     </header>
+
     <section class="intro-content">
-        <div class="image" data-aos="zoom-out-down" data-aos-delay="300">
+        <div class="image">
             <img src="assets/bg-clinica.png" alt="Medicine image">
         </div>
-        <div class="intro-content-text" data-aos="fade-down-left" data-aos-delay="500">
+        <div class="intro-content-text">
             <a href="#">Entrar em Contato</a>
             <a href="#">Agendamento Online</a>
         </div>
     </section>
     <main class="main-content container">
-        <div class="desc-main" data-aos="fade-down">
+        <div class="desc-main">
             <p>Bem-vindo à <span>Clínica Serenidade Vital</span>, o seu refúgio de saúde e bem-estar. Aqui, a sua saúde
                 é a nossa
                 prioridade. Nossa equipe de profissionais altamente qualificados está comprometida em proporcionar
                 cuidados de qualidade, promovendo a serenidade e vitalidade que você merece</p>
         </div>
 
-        <div class="about-clinica container-default" id="sobre" data-aos="fade-up">
+        <div class="about-clinica container-default" id="sobre">
             <h1>Sobre</h1>
             <p>Nossa Clínica Médica é dedicada a fornecer atendimento médico excepcional a pacientes de todas as idades.
                 Com anos de experiência e um compromisso com o bem-estar de nossos pacientes, nossa equipe médica é
@@ -69,7 +71,7 @@
                 altamente qualificada e comprometida em fornecer cuidados de qualidade excepcional. Você está em boas
                 mãos.</p>
         </div>
-        <div class="service-clinica container-default" id="servicos" data-aos="fade-down-left">
+        <div class="service-clinica container-default" id="servicos">
             <h1>Serviços</h1>
             <p>Nossos serviços médicos abrangem uma ampla gama de necessidades de saúde. Oferecemos consultas gerais
                 para cuidados preventivos e exames médicos de rotina, bem como tratamentos especializados para atender a
@@ -82,17 +84,41 @@
             <h1>Mais Procurados</h1>
 
             <div class="box-items">
-                <div class="box-item" data-aos="fade-up" data-aos-delay="150"><img src="assets/fisio-service.png"
-                        alt="Fisioterapia image"></div>
-                <div class="box-item" data-aos="fade-up" data-aos-delay="250"><img src="assets/esp-service.png"
-                        alt="Medicina do esporte"></div>
-                <div class="box-item" data-aos="fade-up" data-aos-delay="350"><img src="assets/odonto-service.png"
-                        alt="Odontologia"></div>
-                <div class="box-item" data-aos="fade-up" data-aos-delay="450"><img src="assets/Psicologia-service.png"
-                        alt="Psicologia"></div>
+                <div class="box-item"><img src="assets/fisio-service.png" alt="Fisioterapia image">
+                    <div class="price-info">
+                        <strong>Preço</strong>
+                        <button>
+                            R$ 99,00
+                        </button>
+                    </div>
+                </div>
+                <div class="box-item"><img src="assets/esp-service.png" alt="Medicina do esporte">
+                    <div class="price-info">
+                        <strong>Preço</strong>
+                        <button>
+                            R$ 79,00
+                        </button>
+                    </div>
+                </div>
+                <div class="box-item"><img src="assets/odonto-service.png" alt="Odontologia">
+                    <div class="price-info">
+                        <strong>Preço</strong>
+                        <button>
+                            R$ 199,00
+                        </button>
+                    </div>
+                </div>
+                <div class="box-item"><img src="assets/Psicologia-service.png" alt="Psicologia">
+                    <div class="price-info">
+                        <strong>Preço</strong>
+                        <button>
+                            R$ 399,00
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="espicification-services" data-aos="fade-up" data-aos-delay="250">
+        <div class="espicification-services">
             <h1>Especialidades</h1>
             <ul>
                 <li>Consultas Médicas Gerais</li>
@@ -114,28 +140,28 @@
 
     </main>
 
-    <div class="localization" data-aos="fade-down-left" data-aos-delay="150">
+    <div class="localization">
         <h2>Como Chegar?</h2>
     </div>
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.3953761126!2d-46.92494211257755!3d-23.681434660981857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1698090980066!5m2!1spt-BR!2sbr"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <div class="contacts" id="contatos" data-aos="fade-down-right" data-aos-delay="150">
+    <div class="contacts" id="contatos">
         <h1>Contatos</h1>
         <div class="box-icons">
-            <div class="icon"><img src="assets/icons/whatsapp.png" alt="Icon Whatsapp">(88) 9999 - 7777</div>
-            <div class="icon"><img src="assets/icons/gmail.png" alt="Icon Gmail">clinicamedica@gmail.com</div>
-            <div class="icon"><img src="assets/icons/twitter.png" alt="Icon twitter">clinicamedica</div>
-            <div class="icon"><img src="assets/icons/facebook.png" alt="Icon twitter">clinicamedica</div>
-            <div class="icon"><img src="assets/icons/instagram (1).png" alt="Icon twitter">clinicamedica</div>
+            <div class="icon"><img src="assets/icons/whatsapp.png" alt="Icon Whatsapp"></div>
+            <div class="icon"><img src="assets/icons/gmail.png" alt="Icon Gmail"></div>
+            <div class="icon"><img src="assets/icons/twitter.png" alt="Icon twitter"></div>
+            <div class="icon"><img src="assets/icons/facebook.png" alt="Icon twitter"></div>
+            <div class="icon"><img src="assets/icons/instagram (1).png" alt="Icon twitter"></div>
         </div>
     </div>
     <footer class="footer">
         <p>© All Rights • Clinica Medica - Clínica Médica</p>
     </footer>
     <a href="https://api.whatsapp.com/send?phone=51999999922&text=Quero%20fazer%20uma%20encomenda%20hoje!"
-        data-aos="fade-up" class="btn-whatsapp" target="_blank">
+        class="btn-whatsapp" target="_blank">
         <img src="assets/whatssapp.svg" alt="Button Whatsapp">
         <span class="tooltip-text">Agendar agora</span>
     </a>

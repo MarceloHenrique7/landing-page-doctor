@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   position: fixed;
   background-color: #43f6cc;
@@ -11,7 +15,7 @@ header {
   left: 0;
   z-index: 1000;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   padding: 10px;
 }
 
@@ -46,16 +50,12 @@ nav {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .nav-list {
   display: flex;
-  position: absolute;
-  top: 0vh;
+  position: fixed;
+  top: 0;
   right: 0;
-  width: 70vw;
+  width: 80vw;
   height: 100vh;
   background: linear-gradient(to left, #12665b, #07d1b6);
   box-shadow: 2px 2px 5px black;
@@ -136,7 +136,7 @@ body {
 
 .intro-content-text a {
   color: #fff;
-  background: linear-gradient(to bottom, rgb(3, 240, 3), green);
+  background: linear-gradient(to bottom, rgb(10, 187, 157), rgb(0, 128, 111));
   font-family: "Poppins", sans-serif;
   padding: 10px;
   margin: 5px 0px;
@@ -221,34 +221,61 @@ body {
 .box-content-services > .box-items {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 10px;
   align-items: center;
   justify-content: center;
 }
 
 .box-item {
+  width: 80%;
+  margin: 0 auto;
+  flex: 1;
   display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px -1px 17px 4px rgba(0, 0, 0, 0.281);
+  overflow: hidden;
 }
-
-.box-item:hover {
-  animation: scaleBox 0.8s alternate infinite;
-}
-
 .box-item img {
   width: 100%;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.315);
+  transition: transform 0.2s;
+}
+
+.box-item img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.price-info {
+  width: 100%;
+  display: flex;
+  font-family: "Mooli", sans-serif;
+  justify-content: space-between;
+  padding: 14px;
+  color: #333;
+  background-color: #fff;
+  z-index: 99;
+}
+
+.price-info button {
+  color: #fff;
+  background-color: #49917d;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 0;
+  cursor: default;
 }
 
 .espicification-services {
+  color: #333;
   background-color: aliceblue;
   border-radius: 20px;
 }
 
 .espicification-services h1 {
   text-align: center;
-  color: #43f6cc;
 }
 
 .espicification-services ul {
@@ -341,10 +368,11 @@ iframe {
 }
 
 .contacts > .box-icons {
-  width: 60%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  display: flex;
   gap: 10px;
+  align-items: center;
+  justify-content: center;
   padding: 20px 0px;
 }
 
@@ -421,39 +449,47 @@ iframe {
     display: none;
   }
   header {
-    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   nav {
-    width: 50%;
+    width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
   }
   .nav-list {
     display: flex;
     width: 60%;
-    height: 100%;
+    top: 17px;
+    height: 20px;
+    align-items: center;
     background: none;
     box-shadow: none;
     font-family: "Mooli", sans-serif;
     font-size: var(24px);
     flex-direction: row;
-    align-items: center;
     text-align: center;
     justify-content: center;
     transform: translateX(0);
     transition: transform 0.3s ease-in;
+  }
+  .box-item {
+    width: 100%;
   }
   .intro-content > .image {
     max-width: 60%;
     padding-top: 90px;
   }
   .intro-content > .image > img {
-    border-radius: 20px;
+    border-radius: 8px;
   }
   main {
     max-width: 40%;
+  }
+  .box-content-services > .box-items {
+    grid-template-columns: repeat(2, 1fr);
   }
   .contacts > .box-icons {
     width: 50%;
